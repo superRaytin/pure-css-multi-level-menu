@@ -88,6 +88,10 @@ HTML部分
 
 以上示例只需要 `CSS` 和 `HTML`，没有脚本，也没有图片引用，低碳环保
 
+运行效果如下图：
+
+![css-multi-level-menu](examples/images/css-multi-level-menu.png)
+
 如果你想要 `悬停` 的效果，那必须要借助JS来实现，比如用jQuery库可以这么写
 
 ```javascript
