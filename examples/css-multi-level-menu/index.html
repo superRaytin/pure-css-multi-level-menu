@@ -98,11 +98,9 @@
 
                 if(that.hasClass('multi-menu-parent')){
                     that.find('> ul').show();
-                    that.siblings('li').find('ul').hide();
                 }
-                else{
-                    that.siblings('li').find('ul').hide();
-                }
+
+                that.siblings('li').find('ul').hide();
             });
 
             $('html').on('click', function(){

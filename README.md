@@ -100,12 +100,10 @@ $('.multi-menu li').on('mouseover', function(){
     if(that.hasClass('disabled')) return;
     if(that.hasClass('multi-menu-parent')){
         that.find('> ul').show();
-        that.siblings('li').find('ul').hide();
     }
-    else{
-        that.siblings('li').find('ul').hide();
-    }
+    that.siblings('li').find('ul').hide();
 });
+// 点击空白处隐藏
 $('html').on('click', function(){
     var menu = $('.multi-menu');
     if(menu.length){
