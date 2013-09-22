@@ -3,15 +3,91 @@ what's this?
 
 实用而且有趣的代码片段
 
-# Navi
+# Navigation
 * [css-multi-level-menu & 纯CSS无限制级联菜单](#css-multi-level-menu)
 
 ## css-multi-level-menu
-
-    <link href="../../libs/css-multi-level-menu/multi-menu.css" rel="stylesheet">
-
-12
-
+引入css文件
 ```html
 <link href="../../libs/css-multi-level-menu/multi-menu.css" rel="stylesheet">
 ```
+
+HTML部分
+```html
+<div class="multi-menu">
+    <ul>
+        <li class="multi-menu-parent">
+            <span class="name">Put the mouse above me</span>
+            <ul>
+                <li>
+                    <span class="name">I'm a normal item</span>
+                </li>
+                <li>
+                    <span class="name">I'm a normal item2</span>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span class="name">I'm a normal item3</span>
+        </li>
+        <li>
+            <span class="name">I'm a normal item4</span>
+        </li>
+    </ul>
+</div>
+```
+上面的例子展示了一个二级的菜单，更多级只需要按照同样的格式增加
+
+通过给 `li` 增加class来增强功能：
+
+* `multi-menu-parent` 表示该菜单项下面有子级菜单
+* `disabled` 表示该菜单项为不可点击状态
+* `separate` 表示分隔线
+
+给 `ul` 增加class `check-list` 模仿复选框的效果，给菜单项增加class `checked` 可以选中该项
+
+下面是一个结构更复杂功能更多的示例：
+```html
+<div class="multi-menu">
+    <ul>
+        <li class="multi-menu-parent">
+            <span class="name">Put the mouse above me</span>
+            <ul>
+                <li>
+                    <span class="name">I'm a normal item</span>
+                </li>
+                <li class="separate"></li>
+                <li>
+                    <span class="name">I'm a normal item2</span>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span class="name">I'm a normal item3</span>
+        </li>
+        <li class="disabled">
+            <span class="name">I'm a disabled item</span>
+        </li>
+        <li class="multi-menu-parent">
+            <span class="name">I'm a normal item4</span>
+            <ul class="check-list">
+                <li>
+                    <span class="name">I'm a normal item</span>
+                </li>
+                <li class="checked">
+                    <span class="name">I'm checked!</span>
+                </li>
+                <li>
+                    <span class="name">I'm a normal item</span>
+                </li>
+            </ul>
+        </li>
+        <li class="separate"></li>
+        <li>
+            <span class="name">I'm a normal item5</span>
+        </li>
+    </ul>
+</div>
+```
+
+另外，如果你更喜欢less的方式，同样也提供了 [less文件](/libs/css-multi-level-menu/multi-menu.less)
