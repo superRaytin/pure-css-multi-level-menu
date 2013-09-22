@@ -3,184 +3,118 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Pure CSS multi-level menu</title>
-	<style type="text/css">
-	
-	
-	.toolbar-popup {
-		box-shadow: 0 0 4px #888;
-		border-radius: 2px;
-	}
-	.toolbar-popup ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		border-radius: 2px;
-		background: #fff;
-	}
-	.toolbar-popup ul li {
-		padding: 0 5px;
-		position: relative;
-		white-space: nowrap;
-	}
-	.toolbar-popup ul li span.name {
-		height: 22px;
-		line-height: 22px;
-		display: inline-block;
-		padding-left: 0;
-	}
-	.toolbar-popup ul li > ul {
-		position: absolute;
-		left: 100%;
-		top: 0;
-		box-shadow: 0 0 4px #999999;
-		display: none;
-	}
-	.toolbar-popup ul li.popup-parent > .name {
-		padding-right: 21px;
-	}
-	.toolbar-popup ul li.nonicon > .name {
-		border-left: none;
-		padding-left: 0;
-		margin-left: 0;
-	}
-	.toolbar-popup ul li.popup-parent:after {
-		content: "►";
-		color: #999;
-		position: absolute;
-		right: 5px;
-		top: 3px;
-		font-size: 10px;
-	}
-	.toolbar-popup ul li.popup-separate {
-		height: 1px;
-		border-top: 1px solid #dedede;
-		margin: 2px 0;
-	}
-	.toolbar-popup ul li:hover {
-		background: #eee;
-		cursor: pointer;
-	}
-	.toolbar-popup > ul.check-list li {
-		padding-left: 18px;
-	}
-	.toolbar-popup > ul.check-list li[data-check="true"]:before {
-		color: #666;
-		content: "√";
-		display: inline-block;
-		position: absolute;
-		left: 5px;
-		top: 2px;
-	}
-	</style>
+	<link href="../../libs/css-multi-level-menu/multi-menu.css" rel="stylesheet">
 </head>
 <body>
-	<div class="toolbar-popup" data-widget-cid="widget-2" style="z-index: 99; display: block; position: absolute; left: 787px; top: 54px;">
+	<div class="multi-menu">
         <ul>
-            <li class="popup-parent nonicon">
-                <span class="name">数字</span>
-                <ul class="J-popup-parent-ul" style="display: block;">
-                    <li data-param="@,@@0" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234</span>
+            <li class="multi-menu-parent">
+                <span class="name">求抚摸啊啊啊</span>
+                <ul>
+                    <li>
+                        <span class="ico-adl-blank"><i></i></span>
+                        <span class="name">1983的小巷</span>
                     </li>
-                    <li data-param="@,@@0.0" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234.5</span>
+                    <li>
+                        <span class="ico-adl-blank"><i></i></span>
+                        <span class="name">落叶在湖面上睡着了</span>
                     </li>
-                    <li data-param="@,@@0.00" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234.56</span>
+                    <li>
+                        <span class="ico-adl-blank"><i></i></span>
+                        <span class="name">我假装过去不重要</span>
                     </li>
-                    <li data-param="@,@@0.000" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234.567</span>
+                    <li class="multi-menu-parent">
+                        <span class="ico-adl-blank"><i></i></span>
+                        <span class="name">你说好不好</span>
+                        <ul>
+                            <li>
+                                <span class="ico-adl-blank"><i></i></span>
+                                <span class="name">脑海里一直缠绕</span>
+                            </li>
+                            <li class="multi-menu-parent">
+                                <span class="ico-adl-blank"><i></i></span>
+                                <span class="name">牵不回从前的心跳</span>
+                                <ul class="check-list">
+                                    <li>
+                                        <span class="ico-adl-blank"><i></i></span>
+                                        <span class="name">能不能就这样</span>
+                                    </li>
+                                    <li class="checked">
+                                        <span class="ico-adl-blank"><i></i></span>
+                                        <span class="name">everywhere is you</span>
+                                    </li>
+                                    <li>
+                                        <span class="ico-adl-blank"><i></i></span>
+                                        <span class="name">超人不会飞</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="ico-adl-blank"><i></i></span>
+                                <span class="name">一分一秒都好</span>
+                            </li>
+                        </ul>
                     </li>
-                    <li data-param="@,@@0.0000" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234.5678</span>
+                    <li class="separate"></li>
+                    <li>
+                        <span class="ico-adl-blank"><i></i></span>
+                        <span class="name">静止了</span>
                     </li>
-                    <li class="popup-separate"></li>
-                    <li data-param="$@,@@0" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">$1,234</span>
-                    </li>
-                    <li data-param="$@,@@0.0" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">$1,234.5</span>
-                    </li>
-                    <li data-param="$@,@@0.00" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">$1,234.56</span>
-                    </li>
-                    <li class="popup-separate"></li>
-                    <li data-param="@,@@0%" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234%</span>
-                    </li>
-                    <li data-param="@,@@0.0%" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234.5%</span>
-                    </li>
-                    <li data-param="@,@@0.00%" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1,234.56%</span>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="popup-parent nonicon">
-                <span class="name">日期时间</span>
-                <ul class="J-popup-parent-ul" style="display: none;">
-                    <li data-param="m/d/yy" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1/5/08</span>
-                    </li>
-                    <li data-param="mm/dd/yyyy" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">01/05/08</span>
-                    </li>
-                    <li data-param="yyyy-mm-dd" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">2008-01-05</span>
-                    </li>
-                    <li data-param="d-mmm-yy" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">5-Jan-08</span>
-                    </li>
-                    <li data-param="dd-mmm-yyyy" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">05-Jan-2008</span>
-                    </li>
-                    <li data-param="mmmm d, yyyy" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">January 5, 2008</span>
-                    </li>
-                    <li class="popup-separate"></li>
-                    <li data-param="yyyy-mm-dd hh:mm:ss" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">2008-01-05 01:20:58</span>
-                    </li>
-                    <li data-param="h:mm" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1:20</span>
-                    </li>
-                    <li data-param="h:mm AM/PM" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1:20 PM</span>
-                    </li>
-                    <li data-param="h:mm:ss" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">1:20:45</span>
-                    </li>
-                    <li data-param="hh:mm:ss" data-type="cell_format">
-                        <span class="J-popup-command ico-adl-blank"><i></i></span>
-                        <span class="name">01:20:45</span>
+                    <li>
+                        <span class="ico-adl-blank"><i></i></span>
+                        <span class="name">所有的花开</span>
                     </li>
                 </ul>
             </li>
+            <li>
+                <span class="ico-adl-blank"><i></i></span>
+                <span class="name">遥远了清晰的爱</span>
+            </li>
+            <li class="disabled">
+                <span class="ico-adl-blank"><i></i></span>
+                <span class="name">我的枪不会装弹药</span>
+            </li>
+            <li>
+                <span class="ico-adl-blank"><i></i></span>
+                <span class="name">你喜欢站在那窗台</span>
+            </li>
+            <li class="separate"></li>
+            <li>
+                <span class="ico-adl-blank"><i></i></span>
+                <span class="name">Love but not like</span>
+            </li>
+        </ul>
+    </div>
 
-            <li class="nonicon" data-param="" data-type="cell_format">
-                <span class="name">还原</span>
+    <div class="multi-menu" style="top: 180px">
+        <ul>
+            <li class="multi-menu-parent">
+                <span class="name">求抚摸啊啊啊</span>
+                <ul>
+                    <li>
+                        <span class="name">1983的小巷</span>
+                    </li>
+                    <li>
+                        <span class="name">我假装过去不重要</span>
+                    </li>
+                    <li class="separate"></li>
+                    <li>
+                        <span class="name">静止了</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="name">遥远了清晰的爱</span>
+            </li>
+            <li class="disabled">
+                <span class="name">你点不到我的</span>
+            </li>
+            <li>
+                <span class="name">你喜欢站在那窗台</span>
+            </li>
+            <li class="separate"></li>
+            <li>
+                <span class="name">Love but not like</span>
             </li>
         </ul>
     </div>
