@@ -12,6 +12,6 @@ what's this?
 
 12
 
-```
+```html
 <link href="../../libs/css-multi-level-menu/multi-menu.css" rel="stylesheet">
 ```
