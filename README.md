@@ -92,6 +92,17 @@ HTML部分
 
 ![css-multi-level-menu](examples/images/css-multi-level-menu.png)
 
+如果你想要类似操作系统，前面带有图标的菜单，那么，HTML结构只需要稍微的改一改：
+
+```html
+<li>
+    <span class="glyphicon glyphicon-heart"></span>
+    <span class="name">I'm a normal item3</span>
+</li>
+```
+
+图标库推荐采用bootstrap3提供的字体图形库 `Glyphicons`，只需要下载 `bootstrap-glyphicons.css`
+
 如果你想要 `悬停` 的效果，那必须要借助JS来实现，比如用jQuery库可以这么写
 
 ```javascript
