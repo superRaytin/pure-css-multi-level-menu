@@ -1,13 +1,8 @@
-what's this?
-=========
-
-实用而且有趣的代码片段
-
 # Navigation
 * [css-multi-level-menu & 纯CSS无限制级联菜单](#css-multi-level-menu)
 
 # css-multi-level-menu
-纯CSS无限制级联菜单。
+纯CSS无限制级联菜单，特点是代码量小 —— CSS不足100行，扩展性强。
 
 引入css文件
 ```html
@@ -94,7 +89,7 @@ HTML部分
 
 ![css-multi-level-menu](examples/src/images/css-multi-level-menu.png)
 
-[猛击我查看Demo](http://blog.jsfor.com/demo/css-multi-level-menu/)
+[猛击我查看Demo](http://codepen.io/superRaytin/details/xjtgD)
 
 ### 扩展
 
@@ -139,4 +134,4 @@ $('html').on('click', function(){
 
 或者直接使用改好的 [multi-menu-with-js.css](/libs/css-multi-level-menu/multi-menu-with-js.css)
 
-[猛击我查看Demo（扩展）](http://blog.jsfor.com/demo/css-multi-level-menu/index-with-js.html)
+[猛击我查看Demo（扩展）](http://codepen.io/superRaytin/pen/GIxyt)
