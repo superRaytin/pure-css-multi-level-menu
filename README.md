@@ -7,6 +7,8 @@ what's this?
 * [css-multi-level-menu & 纯CSS无限制级联菜单](#css-multi-level-menu)
 
 # css-multi-level-menu
+纯CSS无限制级联菜单。
+
 引入css文件
 ```html
 <link href="../../libs/css-multi-level-menu/multi-menu.css" rel="stylesheet">
@@ -92,7 +94,11 @@ HTML部分
 
 ![css-multi-level-menu](examples/images/css-multi-level-menu.png)
 
-如果你想要类似操作系统，前面带有图标的菜单，那么，HTML结构只需要稍微的改一改：
+[猛击我查看Demo](http://blog.jsfor.com/demo/css-multi-level-menu/)
+
+### 扩展
+
+如果想要类似操作系统，前面带有图标的菜单，那么，HTML结构只需要稍微的改一改：
 
 ```html
 <li>
@@ -103,7 +109,7 @@ HTML部分
 
 图标库推荐采用bootstrap3提供的字体图形库 `Glyphicons`，只需要下载 `bootstrap-glyphicons.css`
 
-如果你想要 `悬停` 的效果，那必须要借助JS来实现，比如用jQuery库可以这么写
+如果想要 `悬停` 的效果，那必须要借助JS来实现，比如用jQuery库可以这么写
 
 ```javascript
 $('.multi-menu li').on('mouseover', function(){
