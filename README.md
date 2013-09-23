@@ -92,7 +92,7 @@ HTML部分
 
 运行效果如下图：
 
-![css-multi-level-menu](examples/images/css-multi-level-menu.png)
+![css-multi-level-menu](examples/src/images/css-multi-level-menu.png)
 
 [猛击我查看Demo](http://blog.jsfor.com/demo/css-multi-level-menu/)
 
@@ -107,7 +107,7 @@ HTML部分
 </li>
 ```
 
-图标库推荐采用bootstrap3提供的字体图形库 `Glyphicons`，只需要下载 `bootstrap-glyphicons.css`
+图标库推荐采用 `bootstrap3` 提供的字体图形库 `Glyphicons`
 
 如果想要 `悬停` 的效果，那必须要借助JS来实现，比如用jQuery库可以这么写
 
@@ -136,3 +136,7 @@ $('html').on('click', function(){
   display: block;
 }
 ```
+
+或者直接使用改好的 [multi-menu-with-js.css](/libs/css-multi-level-menu/multi-menu-with-js.css)
+
+[猛击我查看Demo（扩展）](http://blog.jsfor.com/demo/css-multi-level-menu/index-with-js.html)

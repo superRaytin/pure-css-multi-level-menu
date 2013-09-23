@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Pure CSS multi-level menu</title>
-	<link href="../../libs/css-multi-level-menu/multi-menu.css" rel="stylesheet">
+	<link href="../../libs/css-multi-level-menu/multi-menu-with-js.css" rel="stylesheet">
 </head>
 <body>
 	<div class="multi-menu">
@@ -74,5 +74,29 @@
             </li>
         </ul>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.multi-menu li').on('mouseover', function(){
+                var that = $(this);
+
+                if(that.hasClass('disabled')) return;
+
+                if(that.hasClass('multi-menu-parent')){
+                    that.find('> ul').show();
+                }
+
+                that.siblings('li').find('ul').hide();
+            });
+
+            $('html').on('click', function(){
+                var menu = $('.multi-menu');
+                if(menu.length){
+                    menu.find('li.multi-menu-parent > ul').hide();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
