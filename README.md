@@ -1,4 +1,4 @@
-> 代码也疯狂，一段代码，一段人生，它可以让你的代码变得更加强大。
+> 代码也疯狂，一段代码，一段人生。
 
 # Navigation
 * [css-multi-level-menu & 纯CSS无限制级联菜单](#css-multi-level-menu)
