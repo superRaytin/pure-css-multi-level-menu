@@ -1,0 +1,151 @@
+.qtips_wrap {
+  position: relative;
+  cursor: default;
+  z-index: 1000;
+  background: #fff;
+}
+.qtips_wrap .qtips {
+  min-width: 200px;
+  line-height: 16px;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1001;
+  text-align: left !important;
+}
+.qtips_wrap .qtips .tipcontainer {
+  z-index: 99;
+  position: absolute;
+  padding-right: 2px;
+}
+.qtips_wrap .qtips .tipbackground {
+  z-index: 90;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #beb49c;
+  border-bottom: 4px solid #beb49c;
+  margin: 8px 0 0 2px;
+  width: 300px;
+  display: none;
+}
+.qtips_wrap .qtips .container {
+  width: 100%;
+  margin-top: 6px;
+  padding-top: 0px !important;
+  position: relative;
+}
+.qtips_wrap .qtips .contentcontainer {
+  padding: 0px !important;
+  border: 1px solid #beb49c;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background: #fefbe4;
+}
+.qtips_wrap .qtips .content {
+  padding: 15px 25px 28px 14px;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  background: #fefbe4 url(qtip_2.gif) repeat-x 0 bottom;
+  white-space: nowrap;
+  position: relative;
+  zoom: 1;
+}
+.qtips_wrap .qtips .tipsicon {
+  width: 40px;
+  position: absolute;
+  zoom: 1;
+  float: left;
+}
+.qtips_wrap .qtips .tipsico {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+.qtips_wrap .qtips .tipsico_normal {
+  background: url(qtip_1.gif) no-repeat 0 0;
+}
+.qtips_wrap .qtips .tipstxt {
+  line-height: 19px;
+  zoom: 1;
+  padding-left: 40px;
+}
+.qtips_wrap .qtips .tipstxt .desc {
+  word-wrap: break-word;
+  word-break: normal;
+  width: 150px;
+}
+.qtips_wrap .qtips .tipsrightpanel {
+  text-align: left;
+  text-decoration: none !important;
+  height: 10px;
+  font-size: 12px;
+  color: #000;
+  font-weight: normal;
+}
+.qtips_wrap .qtips .opertbar {
+  position: absolute;
+  right: 15px;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: normal !important;
+  color: #000 !important;
+}
+.qtips_wrap .qtips .opertbar a {
+  float: none !important;
+  display: inline !important;
+  color: #1E5494;
+  text-decoration: none;
+}
+.qtips_wrap .qtips .opertbar a:hover {
+  text-decoration: underline;
+}
+.qtips_wrap .qtips a.btnClose {
+  position: absolute;
+  right: 2px;
+  margin: -6px 8px 0 4px;
+  width: 12px !important;
+  height: 12px !important;
+  background: url(qtip_2.gif) no-repeat -48px 0;
+  z-index: 1001;
+}
+.qtips_wrap .qtips a.btnClose:hover,
+.qtips_wrap .qtips a.btnClose:active {
+  background: url(qtip_2.gif) no-repeat -32px 0;
+}
+.qtips_wrap .qtips .arrowup {
+  position: absolute;
+  z-index: 99;
+  display: block;
+  width: 12px;
+  height: 7px;
+  margin-bottom: -1px;
+  margin-left: 100px;
+  background: url(qtip_2.gif) no-repeat 0 0;
+}
+.qtips_wrap .qtips .arrowdown {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  width: 12px;
+  height: 9px;
+  margin-top: -1px;
+  margin-left: 50px;
+  background: url(qtip_2.gif) no-repeat -16px 0;
+}
+.qtips_wrap .qtips a.qtips_btnClose {
+  float: right;
+  margin-top: 3px;
+  width: 12px!important;
+  height: 12px!important;
+  background: url(qtip_2.gif) no-repeat -48px 0;
+}
+.qtips_wrap .qtips .clr {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}
+.qtips_wrap .qtips .hide {
+  display: none;
+}

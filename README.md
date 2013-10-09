@@ -2,6 +2,7 @@
 
 # Navigation
 * [css-multi-level-menu & 纯CSS无限制级联菜单](#css-multi-level-menu)
+* [QQMail-style-tips-floating-layer & QQ邮箱风格的浮层提示](#QQMail-style-tips-floating-layer)
 
 # css-multi-level-menu
 纯CSS无限制级联菜单，特点是代码量小 —— CSS不足100行，扩展性强。
@@ -137,3 +138,52 @@ $('html').on('click', function(){
 或者直接使用改好的 [multi-menu-with-js.css](/libs/css-multi-level-menu/multi-menu-with-js.css)
 
 [猛击我查看Demo（扩展）](http://codepen.io/superRaytin/pen/GIxyt)
+
+# QQMail-style-tips-floating-layer
+QQ邮箱风格的浮层提示，觉得很是美观，遂提取出来，仅供学习参考，设计版权归QQ邮箱所有。
+
+引入css文件
+```html
+<link href="../../libs/QQMail-style-tips-floating-layer/floating-tips.css" rel="stylesheet">
+```
+
+推荐使用 [less文件](/libs/QQMail-style-tips-floating-layer/floating-tips.less)
+
+HTML部分
+```html
+<span class="qtips_wrap">
+	<div class="qtips">
+		<div class="tipcontainer">
+			<span class="arrowup"></span>
+				<div class="container">
+					<div class="contentcontainer">
+						<div class="content">
+							<div class="tipsicon">
+								<span class="tipsico tipsico_normal"></span>
+							</div>
+							<a class="btnClose" href="javascript:;"></a>
+							<div class="tipstxt">
+								<div class="desc">生活不是眼前的苟且，<br>生活有诗和远方。</div>
+							</div>
+							<div class="tipsrightpanel">
+								<div class="opertbar">
+									<a href="http://3g.mail.qq.com/cgi-bin/loginpage" target="_blank">了解更多</a>
+									&nbsp;&nbsp;<a class="" title="" href="javascript:;">我知道了</a>
+								</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>
+				</div>
+			<span class="arrowdown hide"></span>
+		</div>
+		<div class="tipbackground"></div>
+	</div>
+</span>
+```
+
+运行效果如下图：
+
+![css-multi-level-menu](examples/src/images/QQMail-style-tips-floating-layer.png)
+
+[猛击我查看Demo](http://codepen.io/superRaytin/details/vwmEt)
