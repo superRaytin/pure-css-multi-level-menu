@@ -139,6 +139,7 @@ $('html').on('click', function(){
 
 [猛击我查看Demo（扩展）](http://codepen.io/superRaytin/pen/GIxyt)
 
+----
 # QQMail-style-tips-floating-layer
 QQ邮箱风格的浮层提示，觉得很是美观，遂提取出来，仅供学习参考，设计版权归QQ邮箱所有。
 
@@ -167,7 +168,7 @@ HTML部分
 							</div>
 							<div class="tipsrightpanel">
 								<div class="opertbar">
-									<a href="http://3g.mail.qq.com/cgi-bin/loginpage" target="_blank">了解更多</a>
+									<a href="#" target="_blank">了解更多</a>
 									&nbsp;&nbsp;<a class="" title="" href="javascript:;">我知道了</a>
 								</div>
 							</div>
