@@ -2,7 +2,7 @@
 
 # Navigation
 * [css-multi-level-menu & 纯CSS无限制级联菜单](#css-multi-level-menu)
-* [QQMail-style-tips-floating-layer & QQ邮箱风格的浮层提示](#QQMail-style-tips-floating-layer)
+* [QQMail-style-tips-floating-layer & QQ邮箱风格的浮层提示](#qqmail-style-tips-floating-layer)
 
 # css-multi-level-menu
 纯CSS无限制级联菜单，特点是代码量小 —— CSS不足100行，扩展性强。
@@ -151,7 +151,7 @@ QQ邮箱风格的浮层提示，觉得很是美观，遂提取出来，仅供学
 
 HTML部分
 ```html
-<span class="qtips_wrap">
+<div class="qtips_wrap">
 	<div class="qtips">
 		<div class="tipcontainer">
 			<span class="arrowup"></span>
@@ -179,11 +179,11 @@ HTML部分
 		</div>
 		<div class="tipbackground"></div>
 	</div>
-</span>
+</div>
 ```
 
 运行效果如下图：
 
 ![css-multi-level-menu](examples/src/images/QQMail-style-tips-floating-layer.png)
 
-[猛击我查看Demo](http://codepen.io/superRaytin/details/vwmEt)
+[猛击我查看Demo](http://codepen.io/superRaytin/pen/vwmEt)
