@@ -156,26 +156,26 @@ HTML部分
 	<div class="qtips">
 		<div class="tipcontainer">
 			<span class="arrowup"></span>
-				<div class="container">
-					<div class="contentcontainer">
-						<div class="content">
-							<div class="tipsicon">
-								<span class="tipsico tipsico_normal"></span>
-							</div>
-							<a class="btnClose" href="javascript:;"></a>
-							<div class="tipstxt">
-								<div class="desc">生活不是眼前的苟且，<br>生活有诗和远方。</div>
-							</div>
-							<div class="tipsrightpanel">
-								<div class="opertbar">
-									<a href="#" target="_blank">了解更多</a>
-									&nbsp;&nbsp;<a class="" title="" href="javascript:;">我知道了</a>
-								</div>
-							</div>
-							<div class="clr"></div>
-						</div>
-					</div>
-				</div>
+            <div class="container">
+                <div class="contentcontainer">
+                    <div class="content">
+                        <div class="tipsicon">
+                            <span class="tipsico tipsico_normal"></span>
+                        </div>
+                        <a class="btnClose" href="javascript:;"></a>
+                        <div class="tipstxt">
+                            <div class="desc">生活不是眼前的苟且，<br>生活有诗和远方。</div>
+                        </div>
+                        <div class="tipsrightpanel">
+                            <div class="opertbar">
+                                <a href="#" target="_blank">了解更多</a>
+                                &nbsp;&nbsp;<a class="" title="" href="javascript:;">我知道了</a>
+                            </div>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+            </div>
 			<span class="arrowdown hide"></span>
 		</div>
 		<div class="tipbackground"></div>
